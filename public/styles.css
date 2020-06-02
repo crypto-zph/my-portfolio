@@ -172,6 +172,8 @@ footer {
   opacity: 0;
   z-index: 0;
   animation: imageAnimation 50s linear infinite; 
+  -webkit-animation: imageAnimation 50s linear infinite;
+  -moz-animation: imageAnimation 50s linear infinite;
 }
 .slideshow li:nth-child(1) { 
   background-image: url(https://i.imgur.com/UeMzpyZ.jpeg) 
@@ -179,20 +181,49 @@ footer {
 .slideshow li:nth-child(2) { 
   background-image: url(https://images.unsplash.com/photo-1507090960745-b32f65d3113a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
   animation-delay: 10s; 
+  -webkit-animation-delay: 10s;
+  -moz-animation-delay: 10s;
 }
 .slideshow li:nth-child(3) { 
   background-image: url(https://images.unsplash.com/photo-1470921346718-b615f097684b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
-     animation-delay: 20s; 
+  animation-delay: 20s; 
+  -webkit-animation-delay: 20s;
+  -moz-animation-delay: 20s;
 }
 .slideshow li:nth-child(4) { 
   background-image: url(https://images.unsplash.com/photo-1468476396571-4d6f2a427ee7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=844&q=80);
   animation-delay: 30s; 
+  -webkit-animation-delay: 30s;
+  -moz-animation-delay: 30s;
 }
 .slideshow li:nth-child(5) { 
   background-image: url(https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80);
   animation-delay: 40s; 
+  -webkit-animation-delay: 40s;
+  -moz-animation-delay: 40s;
 }
 @keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 0.7;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes imageAnimation {
   0% { 
     opacity: 0; 
     animation-timing-function: ease-in;
@@ -207,6 +238,27 @@ footer {
   30% {
     opacity: 0;
   }
+}
+
+@-moz-keyframes imageAnimation {
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 0.7;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+.no-cssanimations .slideshow li {
+	opacity: 1;
 }
 
 
