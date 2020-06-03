@@ -14,5 +14,3 @@ function Footer() {
 }
 
 export default Footer;
-
-  // "homepage": "https://vermont-paguiligan.github.io/my-portfolio/",
