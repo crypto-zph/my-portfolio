@@ -95,7 +95,7 @@ function Works() {
         </div>
         </div>
         </Collapse>
-        <Button className="show-more btn-sm" outline color="light" onClick={toggle}>{isOpen ? "Show Less" : "Show More"}</Button>
+        <Button className="show-more btn-sm" outline color="secondary" onClick={toggle}>{isOpen ? "Show Less" : "Show More"}</Button>
         </div>
         
         </div>
