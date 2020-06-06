@@ -1,7 +1,7 @@
 import React from "react";
 
 function Skills() {
-    return <div id="skills">
+    return <div id="skills" className="bg-blk-transparent">
         <div className="skills-content">
         <h3>My Skills</h3>
 
