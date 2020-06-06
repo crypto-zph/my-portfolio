@@ -8,7 +8,7 @@ function Skills() {
         <div className="row">
 
         <div className="skill-row col col-lg-4 col-sm-6 col-12">
-        <span className="icon icon-frontend"></span>        
+        <span className="icon icon-frontend"></span>
         <h6><strong>Front End Web Development</strong></h6>
         <p className="skill-list-content">React.js, HTML5, CSS3, JavaScript, jQuery, Bootstrap 4</p>
         </div>

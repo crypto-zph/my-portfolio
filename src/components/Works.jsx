@@ -16,8 +16,6 @@ function Works() {
 
     return <div id="works">
 
-
-
         <div className="works-content">
         <h3>My Works</h3>
 
@@ -32,6 +30,8 @@ function Works() {
         />
         </div>
 
+        {/* Making the work items responsive */}
+        
         {!isExtraSmall && <div className="col col-lg-4 col-sm-6 col-12 card-container">
         <WorkItem
         img="holder.js/100px180"
