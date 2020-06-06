@@ -51,6 +51,10 @@ p {
   color: #ffffff !important;
 }
 
+.bg-blk-transparent {
+  background-color: rgba(0 ,0 ,0 , 0.2);
+}
+
 @media (max-width: 413px) {
   h1 {
     font-size: 4rem;
@@ -91,13 +95,6 @@ p {
   padding-top: 40vh;
 }
 
-.content {
-  margin: auto;
-  padding-top: 5%;
-  width: 95%;
-  max-width: 742px;
-}
-
 /* ################################ end of intro section ################################ */
 
 
@@ -107,12 +104,6 @@ p {
   background-image: url(https://images.unsplash.com/photo-1521185496955-15097b20c5fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=647&q=80);
   background-size: 100% 100%;
   padding: 0;
-}
-
-@media (max-width: 767px) {
-  .about-image {
-    padding: 30%;
-  }
 }
 
 .about-content-bg {
@@ -256,6 +247,13 @@ p {
   margin-top: 40px;
 }
 
+.contact-content {
+  margin: auto;
+  padding: 5% 0 5%;
+  width: 95%;
+  max-width: 742px;
+}
+
 .contact-message {
   width: 70%;
   margin: 40px auto 60px;
@@ -291,7 +289,6 @@ p {
 
 footer {
   background-color: #292b2c;
-  margin-top: 5rem;
   padding: 50px 0 20px;
   text-align: center;
   position: relative;
